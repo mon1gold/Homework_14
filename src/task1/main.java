@@ -1,12 +1,13 @@
+package task1;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class Main {
+public class main {
     private static String string = "java";
 
     public static void main(String[] args) {
-        List<String> stringList = new  ArrayList <>();
+        List<String> stringList = new ArrayList<>();
 
         String word1 = "programing";
         String word2 = "java";
