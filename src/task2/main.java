@@ -12,8 +12,8 @@ public class main {
 
     public static <T> List<T> toList(T[] array) {
         List<T> list = new ArrayList<>(array.length);
-        for (T i : array) {
-            list.add(i);
+        for (T element : array) {
+            list.add(element);
         }
         return list;
     }

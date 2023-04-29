@@ -10,23 +10,22 @@ public class main {
         System.out.println(findUnique(list));
     }
 
-    public static <T> List<T> findUnique(List<T> list) {
+    public static <T> List<T> findUnique(List<T> element) {
         List<T> newList = new ArrayList<>();
-        if (list.isEmpty()) {
+        if (element.isEmpty()) {
             return newList;
         }
-        for (T element : list) {
+        for (T elements : element) {
             int count = 0;
-            for (T currentElement : list) {
-                if (Objects.equals(element, currentElement)) {
+            for (T currentElement : element) {
+                if (!Objects.equals(element, currentElement)) {
                     count++;
                 }
             }
             if (count == 1) {
-                newList.add(element);
+                newList.add(elements);
             }
         }
         return newList;
     }
 }
-l
