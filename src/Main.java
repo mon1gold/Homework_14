@@ -6,7 +6,7 @@ public class Main {
     private static String string = "java";
 
     public static void main(String[] args) {
-        List<String> stringList = new  ArrayList <>();
+        List<String> stringList = new ArrayList<>();
 
         String word1 = "programing";
         String word2 = "java";

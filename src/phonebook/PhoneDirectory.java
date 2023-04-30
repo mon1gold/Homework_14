@@ -5,13 +5,16 @@ import java.util.List;
 import java.util.Objects;
 
 public class PhoneDirectory {
-    List<Record> phoneDirectory = new ArrayList<>();
+    private List<Record> phoneDirectory = new ArrayList<>();
 
     public void add(String name, int phoneNumber) {
         phoneDirectory.add(new Record(name, phoneNumber));
     }
 
     public Record find(String name) {
+        if (name == null) {
+            return null;
+        }
         for (Record record : phoneDirectory) {
             if (Objects.equals(record.getName(), name)) {
                 return record;
@@ -21,12 +24,15 @@ public class PhoneDirectory {
     }
 
     public List<Record> findAll(String name) {
-        List<Record> list = new ArrayList<>();
+        if (name == null) {
+            return null;
+        }
+        List<Record> result = new ArrayList<>();
         for (Record record : phoneDirectory) {
             if (Objects.equals(record.getName(), name)) {
-                list.add(record);
+                result.add(record);
             }
         }
-        return list.isEmpty() ? null : list;
+        return result.isEmpty() ? null : result;
     }
 }

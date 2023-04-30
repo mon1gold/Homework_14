@@ -6,7 +6,7 @@ import java.util.List;
 public class main {
     public static void main(String[] args) {
         PhoneDirectory phoneDirectory = new PhoneDirectory();
-        phoneDirectory.add("Danil",573835782);
+        phoneDirectory.add("Danil", 573835782);
         phoneDirectory.add("Pasha", 7777777);
         phoneDirectory.add("Danil", 937078747);
         System.out.println(phoneDirectory.findAll("Danil"));
