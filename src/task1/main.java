@@ -1,8 +1,9 @@
+package task1;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class Main {
+public class main {
     private static String string = "java";
 
     public static void main(String[] args) {
@@ -32,9 +33,6 @@ public class Main {
     }
 
     public static int countOccurance(List<String> stringList, String line) {
-        if (stringList == null || line == null) {
-            return 0;
-        }
         int count = 0;
         for (String element : stringList) {
             if (element.equals(line)) {
